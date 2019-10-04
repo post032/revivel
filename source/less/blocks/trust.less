@@ -1,0 +1,157 @@
+.trust__bg {
+  background: #F9F9FA;
+  position: relative;
+}
+
+.trust {
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 38px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust__title {
+  .title-m;
+  margin-bottom: 10px;
+}
+
+.trust__description {
+  .description-m;
+  margin-top: 4px;
+  margin-bottom: 22px;
+}
+
+.trust__text {
+  .text-m;
+  text-align: center;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.trust__link {
+  .button__name;
+  .button-m;
+  margin-top: 31px;
+}
+
+.trust__img {
+  width: 288px;
+  height: 190px;
+}
+@media (min-width: @size-tablet) {
+  .trust {
+    align-items: flex-end;
+  }
+
+  .trust__info {
+    width: 58%;
+    align-items: flex-start;
+  }
+
+  .trust__title {
+    .title-t;
+  }
+
+  .trust__text {
+    .text-t;
+    text-align: left;
+  }
+
+  .trust__description {
+    .description-t;
+    margin-top: 18px;
+    margin-bottom: 16px;
+  }
+
+  .trust__link {
+    .button-t;
+    margin-top: 7px;
+  }
+
+  .trust__img {
+    position: absolute;
+    left: 16px;
+    top: 80px;
+  }
+
+  .trust__up {
+    display: none;
+  }
+}
+@media (min-width: 1045px) {
+  .trust__img {
+    width: 564px;
+    height: 373px;
+  }
+
+  .trust__info {
+    width: 430px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .trust {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 103px;
+    padding-bottom: 130px;
+  }
+
+  .trust__info {
+    width: 534px;
+  }
+
+  .trust__img {
+    left: 0;
+    top: 104px;
+  }
+
+  .trust__up {
+    display: block;
+    background: url("../img/up.svg") no-repeat;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    z-index: 10;
+    bottom: 40px;
+    right: 0;
+  }
+
+  .trust__bg::before {
+    display: block;
+    content: "";
+    width: 328px;
+    height: 299px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../img/decor-t.png") no-repeat;
+  }
+
+  .trust__bg::after {
+    display: block;
+    content: "";
+    width: 398px;
+    height: 392px;
+    position: absolute;
+    right: 0;
+    bottom: -52px;
+    background: url("../img/decor2-t.png") no-repeat;
+  }
+}
+@media (min-width: 1920px) {
+  .trust__up {
+    right: -355px;
+  }
+}

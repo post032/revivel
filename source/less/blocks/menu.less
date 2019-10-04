@@ -1,0 +1,273 @@
+.menu {
+  position: relative;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+.menu__line{
+  border-bottom: 1px solid #E5E5E5;
+  position: relative;
+      z-index: 5;
+}
+
+.menu__logo-link::before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
+  border-radius: 30px;
+}
+
+.menu__logo-link span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 100%;
+  color: #333333;
+  text-decoration: none;
+  display: none;
+}
+
+.menu__link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #2F80ED;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: #333333;
+}
+
+.menu__call {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2F80ED;
+  text-align: center;
+  text-decoration-line: underline;
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu__lists {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu__phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-open {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+  transition: background 0.3s;
+}
+
+.menu-open {
+  width: 28px;
+}
+
+.menu-hide {
+  display: none;
+}
+
+.menu-open:focus {
+  outline: none;
+}
+
+.menu-open span {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
+  border-radius: 5px;
+}
+
+.menu-open span::after,
+.menu-open span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
+  border-radius: 5px;
+  content: "";
+}
+
+.menu-open span::before {
+  top: -9px;
+}
+
+.menu-open span::after {
+  bottom: -9px;
+}
+
+.menu-open--htx {
+  background-color: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
+  border-radius: 5px;;
+}
+
+.menu-open--htx span {
+  transition: background 0s 0.3s;
+}
+
+.menu-open--htx span::after,
+.menu-open--htx span::before {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.menu-open--htx span::before {
+  transition-property: top, transform;
+}
+
+.menu-open--htx span::after {
+  transition-property: bottom, transform;
+}
+/* состояние active при открытом меню  */
+.menu-open--htx.is-active {
+  background: #ffffff;
+}
+
+.menu-open--htx.is-active span {
+  background: none;
+}
+
+.menu-open--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-open--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.menu-open--htx.is-active span::after,
+.menu-open--htx.is-active span::before {
+  transition-delay: 0s, 0.3s;
+}
+
+.menu__logo {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 16px;
+  justify-content: space-between;
+}
+
+.menu__hidden {
+  position: absolute;
+  background: none;
+  animation: bounce 0.5s;
+  position: relative;
+  z-index: 1000;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(-200px);
+  }
+}
+
+
+@media (min-width: @size-tablet) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    padding-bottom: 30px;
+    padding-top: 33px;
+  }
+
+  .menu__logo {
+    padding-right: 0;
+  }
+
+  .menu__logo-link::before {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: -5px;
+  }
+
+  .menu__logo-link {
+    display: flex;
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  .menu__lists,
+  .menu__hidden {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  .menu__phone {
+    align-items: flex-end;
+    padding-right: 16px;
+  }
+
+  .menu__list {
+    margin-left: 20px;
+  }
+
+}
+
+@media (min-width: @size-desktop) {
+  .menu__logo-link span {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .menu__lists {
+    margin-left: 32px;
+  }
+  .menu__list {
+    margin-left: 40px;
+  }
+
+  .menu__logo {
+    padding-left: 0;
+  }
+
+  .menu__phone {
+    padding-right: 0;
+  }
+}

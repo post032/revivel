@@ -1,0 +1,31 @@
+doctype html
+html(lang="ru-Ru")
+  head 
+    meta(charset="UTF-8")
+    title Возрождение
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/style.min.css")
+    
+
+  body
+    main.header__block
+      div.header
+        div.header__bg
+          include ../sections/menu
+          include ../sections/help
+        include ../sections/patients
+        include ../sections/service
+        include ../sections/quote
+        include ../sections/doctors
+        include ../sections/reason
+        include ../sections/trust
+        include ../sections/map
+      include ../sections/side-bar
+    include ../sections/footer
+      
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="https://code.jquery.com/jquery-migrate-1.4.1.min.js")
+    script(src="js/slick.min.js")
+    script(src="js/script.js")

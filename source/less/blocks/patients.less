@@ -1,0 +1,161 @@
+.patients__bg {
+  position: relative;
+  box-sizing: border-box;
+}
+.patients {
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.patients__title {
+  .title-m;
+  margin-bottom: 13px;
+}
+
+.patients__img {
+  width: 288px;
+  height: 195px;
+}
+
+.patients__name {
+  .title-name-m;
+  margin-top: 22px;
+}
+
+.patients__name::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 5px;
+  background: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  margin-top: 21px;
+  margin-bottom: 20px;
+}
+
+.patients__text {
+  .text-m;
+}
+
+.patients__lists {
+  padding: 0;
+  list-style-type: none;
+  margin: 34px 0 0;
+}
+
+.patients__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patients__info {
+  margin-bottom: 24px;
+}
+@media (min-width: @size-tablet) {
+  .patients {
+    padding-top: 68px;
+  }
+
+  .patients__title {
+    .title-t;
+  }
+
+  .patients__text {
+    .text-t;
+  }
+
+  .patients__name {
+    .title-name-t;
+  }
+
+  .patients__lists {
+    margin-top: 65px;
+  }
+
+  .patients__list {
+    background: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 39px;
+  }
+
+  .patients__list:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .patients__info {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 35px;
+    justify-content: flex-start;
+  }
+
+  .patients__name {
+    margin-bottom: 0;
+  }
+
+  .patients__name::after {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .patients__text {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .patients {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .patients__img {
+    width: 564px;
+    height: 382px;
+  }
+
+  .patients__name {
+    margin-top: 13px;
+  }
+
+  .patients__name::after {
+    margin-bottom: 12px;
+    margin-top: 25px;
+  }
+
+  .patients__list {
+    max-width: 1128px;
+    min-height: 382px;
+    align-items: flex-start;
+  }
+
+  .patients__list:first-child .patients__info {
+    margin-left: 40px;
+    margin-top: 93px;
+  }
+
+  .patients__info {
+    margin: 89px 30px 57px;
+  }
+
+  .patients__bg::after {
+    content: "";
+    display: block;
+    width: 966.2px;
+    height: 1065.63px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 467px;
+    background: url("../img/decor-p.png") no-repeat;
+  }
+}

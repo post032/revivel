@@ -1,0 +1,131 @@
+.reason {
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding-top: 39px;
+  padding-bottom: 29px;
+  background: #ffffff;
+
+}
+
+.reason__title {
+  .title-m;
+}
+
+.reason__name {
+  .title-name-m;
+  margin-top: 23px;
+  margin-bottom: 1px;
+}
+
+.reason__text {
+  .text-m;
+  text-align: center;
+}
+
+.reason__lists {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 31px;
+}
+
+.reason__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reason__img {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(90deg, #56CCF2 0%, #2F80ED 100%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.reason__icon1::after,
+.reason__icon2::after,
+.reason__icon3::after,
+.reason__icon4::after,
+.reason__icon5::after,
+.reason__icon6::after {
+  content: "";
+  display: block;
+  background: url("../img/sprites.png");
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+.reason__icon1::after {
+  background-position: -202px -10px;
+}
+
+.reason__icon2::after {
+  background-position: -66px -146px;
+}
+
+.reason__icon3::after {
+  background-position: -146px -66px;
+}
+
+.reason__icon4::after {
+  background-position: -146px -10px;
+}
+
+.reason__icon5::after {
+  background-position: -10px -146px;
+}
+
+.reason__icon6::after {
+  background-position: -122px -146px;
+}
+@media (min-width: @size-tablet) {
+  .reason {
+    padding-top: 67px;
+    padding-bottom: 57px;
+  }
+  .reason__title {
+    .title-t;
+  }
+
+  .reason__name {
+    .title-name-t;
+    margin-top: 17px;
+  }
+
+  .reason__text {
+    .text-t;
+  }
+
+  .reason__lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  .reason__list {
+    width: 288px;
+    margin-top: 15px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .reason {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    .reason__lists {
+      justify-content: space-between;
+    }
+
+    .reason__list {
+      width: 360px;
+    }
+}

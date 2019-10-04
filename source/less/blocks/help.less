@@ -1,0 +1,159 @@
+.help__bg {
+  position: relative;
+  box-sizing: border-box;
+}
+.help {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #333333;
+  margin-top: 21px;
+  margin-bottom: 5px;
+}
+
+.help__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 144%;
+  text-align: center;
+  color: #333333;
+  margin-top: 7px;
+}
+
+.help__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: #424242;
+}
+
+.help__button {
+  .button__name;
+  .button-m;
+  margin-bottom: 21px;
+}
+
+.help__lists {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-bottom: 42px;
+  display: flex;
+  flex-direction: column;
+}
+
+.help__list {
+  width: 288px;
+  min-height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.help__icon {
+  width: 50px;
+  height: 48px;
+  display: block;
+  margin: 16px 15px;
+}
+
+.help__icon-recovery {
+  background: url("../img/sprites.png") -10px -10px;
+}
+
+.help__icon-treatment {
+  background: url("../img/sprites.png") -78px -78px;
+}
+
+.help__icon-care {
+  background: url("../img/sprites.png") -78px -10px;
+}
+
+.help__icon-hospital {
+  background: url("../img/sprites.png") -10px -78px;
+}
+@media (min-width: @size-tablet) {
+  .help__title {
+    font-size: 42px;
+    line-height: 100%;
+  }
+
+  .help__text {
+    font-size: 32px;
+  }
+
+  .help__button {
+    .button-t;
+    margin-bottom: 51px;
+  }
+
+  .help {
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .help__lists {
+    width: 554px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .help__list {
+    width: 267px;
+    margin-bottom: 18px;
+  }
+}
+@media (min-width: @size-desktop) {
+  .help {
+    padding-top: 85px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1860px) {
+  .help__bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 824.15px;;
+    height: 660px;
+    background: url("../img/man2.png") no-repeat;
+    top: 0;
+    right:0;
+    z-index: 0;
+    margin-top: -127px;
+  }
+
+  .help__bg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 526.61px;
+    height: 367.73px;
+    background: url("../img/decor-h.png") no-repeat;
+    top: 146px;
+    right: 0;
+    z-index: 0;
+  }
+}
