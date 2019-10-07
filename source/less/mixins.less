@@ -6,18 +6,37 @@
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 30px;
 }
 
 .button-m {
   width: 286px;
   min-height: 48px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   background: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.button__name-hover {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #2F80ED 0%, #56CCF2 100%);
+  background-color: #ffffff;
+  color: #56CCF2;
+  position: absolute;
+  left: 40px;
 }
 
 .button-t {

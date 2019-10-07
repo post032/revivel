@@ -10,6 +10,9 @@
   margin-right: 16px;
   padding-top: 41px;
   padding-bottom: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .doctors__title {
@@ -25,6 +28,7 @@
 .doctors__name {
   .title-name-m;
   margin-top: 13px;
+  margin-bottom: 5px;
 }
 
 .doctors__about {
@@ -34,6 +38,7 @@
   line-height: 120%;
   text-align: center;
   color: #424242;
+  margin-top: 7px;
 }
 
 .doctors__text {
@@ -41,10 +46,34 @@
   display: none;
 }
 
-.doctors__link {
+.doctors__link span {
   .button__name;
+}
+  .doctors__link {
   .button-m;
 }
+
+.doctors__link:hover,
+.doctors__link:focus {
+  width: 260px;
+  min-height: 40px;
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2F80ED, #56CCF2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.doctors__link:hover span,
+.doctors__link:focus span {
+  font-size: 0;
+}
+
+.doctors__link:hover span::before,
+.doctors__link:focus span::before {
+  content: "Записаться на прием";
+  .button__name-hover;
+}
+
 
 .doctors__img {
   width: 288px;
@@ -54,6 +83,11 @@
 .doctors__slider {
   display: block;
   padding-bottom: 70px;
+  width: 90%;
+}
+
+.doctors__slider .slick-track {
+  margin-bottom: 15px;
 }
 
 .doctors__item {
@@ -112,8 +146,8 @@ margin-top: 18px;
   }
 
   .doctors__item {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 50px;
   }
 
@@ -138,11 +172,11 @@ margin-top: 18px;
       top: -4px;
     }
     .doctors__slider .slick-next {
-      right: 19px;
+      right: -25px;
     }
 
     .doctors__slider .slick-prev {
-      left: -9px;
+      left: -58px;
       z-index: 2;
     }
 }
@@ -160,12 +194,8 @@ margin-top: 18px;
     padding-bottom: 100px;
   }
 
-  .doctors__slider .slick-next {
-    right: 3px;
-  }
-
-  .doctors__slider .slick-prev {
-    left: -25px;
-    z-index: 2;
+  .doctors__item {
+    margin-left: 7px;
+    margin-right: 7px;
   }
 }

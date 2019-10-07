@@ -40,10 +40,35 @@
   z-index: 2;
 }
 
-.trust__link {
+.trust__link span {
   .button__name;
+}
+  .trust__link {
   .button-m;
   margin-top: 31px;
+  z-index: 2;
+}
+
+.trust__link:hover,
+.trust__link:focus {
+  width: 260px;
+  min-height: 40px;
+  border: double 4px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2F80ED, #56CCF2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.trust__link:hover span,
+.trust__link:focus span {
+  font-size: 0;
+}
+
+.trust__link:hover span::before,
+.trust__link:focus span::before {
+  content: "Оставить заявку";
+  .button__name-hover;
+  left: 60px;
 }
 
 .trust__img {

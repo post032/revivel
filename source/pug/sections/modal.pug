@@ -1,0 +1,23 @@
+section.modal
+  form(action="" method="post").modal__position
+    div.modal__form
+      h2.modal__title Оставьте заявку
+      p.modal__description Мы свяжемся с вами в теченье 10 минут
+      button.modal__close
+        span.visually-hidden Закрыть
+      ul.modal__elements
+        li.modal__element
+          input(id="name" type="text" name="name" placeholder="Ваше имя" required).input__text
+          label(for="name").visually-hidden Ваше имя
+        li.modal__element
+          input(id="phone" type="tel" name="phone" placeholder="Телефон" required).input__text
+          label(for="phone").visually-hidden Телефон
+        li.modal__element
+          input(id="mail" type="email" name="E-mail" placeholder="E-mail" required).input__text
+          label(for="mail").visually-hidden E-mail
+        li.modal__element
+          input(id="ok" type="checkbox" name="consent" placeholder="E-mail" required).input__checkbox
+          label(for="ok").modal__consent Согласие с 
+            a(href="#") политикой конфиденциальности
+      input(type="submit" value="Оставить заявку").modal__link
+    

@@ -32,7 +32,7 @@
             <div class="container">
               <section class="help">
                 <h1 class="help__title" id="patient">Медицинский центр «Возрождение»</h1>
-                <p class="help__text">Будущее есть у каждого</p><a class="help__button" href="#">Записаться на прием</a>
+                <p class="help__text">Будущее есть у каждого</p><a class="help__button" href="#"> <span>Записаться на прием</span></a>
                 <ul class="help__lists">
                   <li class="help__list"><span class="help__icon help__icon-recovery"></span>
                     <p class="help__info">Восстановление<br> после травм</p>
@@ -148,7 +148,7 @@
                 </div>
               </div>
               <div class="doctors__record">
-                <p class="doctors__text">Весь персонал обучен не только профессиональному оказанию услуг, но и корректному, бережному, терпеливому обращению. Наши сотрудники могли бы сдавать стресс-тесты в качестве разведчиков палестинской армии – но выбрали дарить тепло и заботу тем, кто в этом нуждается</p><a class="doctors__link" href="#">Записаться на прием</a>
+                <p class="doctors__text">Весь персонал обучен не только профессиональному оказанию услуг, но и корректному, бережному, терпеливому обращению. Наши сотрудники могли бы сдавать стресс-тесты в качестве разведчиков палестинской армии – но выбрали дарить тепло и заботу тем, кто в этом нуждается</p><a class="doctors__link" href="#"> <span>Записаться на прием</span></a>
               </div>
             </section>
           </div>
@@ -190,7 +190,7 @@
               <div class="trust__info">
                 <h2 class="trust__title">Общайтесь с любимыми</h2>
                 <p class="trust__description">А груз мы возьмём на себя</p>
-                <p class="trust__text">Мы понимаем ваши сомнения и не ждём, что вы примете решение сразу. Просто приезжайте в медицинский центр «Возрождение» и убедитесь, что наши условия лучше, чем могут создать даже самые любящие родственники. Посещение ни к чему вас не обязывает</p><img class="trust__img" src="img/love.jpg" alt="общение с любимыми"><a class="trust__link" href="#">Оставить заявку</a><a class="trust__up" href="#start"><span class="visually-hidden"> Вверх</span></a>
+                <p class="trust__text">Мы понимаем ваши сомнения и не ждём, что вы примете решение сразу. Просто приезжайте в медицинский центр «Возрождение» и убедитесь, что наши условия лучше, чем могут создать даже самые любящие родственники. Посещение ни к чему вас не обязывает</p><img class="trust__img" src="img/love.jpg" alt="общение с любимыми"><a class="trust__link" href="#"> <span>Оставить заявку</span></a><a class="trust__up" href="#start"><span class="visually-hidden"> Вверх</span></a>
               </div>
             </section>
           </div>
@@ -242,6 +242,34 @@
         <div class="footer__item2 container"><a class="footer__link" href="#">Политика конфиденциальности</a></div>
       </section>
     </div>
+    <section class="modal">
+      <form class="modal__position" action="" method="post">
+        <div class="modal__form">
+          <h2 class="modal__title">Оставьте заявку</h2>
+          <p class="modal__description">Мы свяжемся с вами в теченье 10 минут</p>
+          <button class="modal__close"><span class="visually-hidden">Закрыть</span></button>
+          <ul class="modal__elements">
+            <li class="modal__element">
+              <input class="input__text" id="name" type="text" name="name" placeholder="Ваше имя" required>
+              <label class="visually-hidden" for="name">Ваше имя</label>
+            </li>
+            <li class="modal__element">
+              <input class="input__text" id="phone" type="tel" name="phone" placeholder="Телефон" required>
+              <label class="visually-hidden" for="phone">Телефон</label>
+            </li>
+            <li class="modal__element">
+              <input class="input__text" id="mail" type="email" name="E-mail" placeholder="E-mail" required>
+              <label class="visually-hidden" for="mail">E-mail</label>
+            </li>
+            <li class="modal__element">
+              <input class="input__checkbox" id="ok" type="checkbox" name="consent" placeholder="E-mail" required>
+              <label class="modal__consent" for="ok">Согласие с <a href="#">политикой конфиденциальности</a></label>
+            </li>
+          </ul>
+          <input class="modal__link" type="submit" value="Оставить заявку">
+        </div>
+      </form>
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>

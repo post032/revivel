@@ -1,9 +1,11 @@
 .menu {
-  position: relative;
+  position: fixed;
   box-sizing: border-box;
+  width: 100%;
   background: #ffffff;
+  border-bottom: 1px solid #E5E5E5;
 }
-.menu__line{
+.menu__line {
   border-bottom: 1px solid #E5E5E5;
   position: relative;
       z-index: 5;
@@ -38,6 +40,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu__link:hover {
+  color: #56CCF2;
 }
 
 .menu__number {
@@ -205,6 +211,7 @@
 
 @media (min-width: @size-tablet) {
   .menu {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background: none;
