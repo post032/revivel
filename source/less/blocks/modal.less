@@ -69,7 +69,9 @@
   .button-m;
   .button__name;
   margin-bottom: 35px;
+  position: relative;
 }
+
 
 .input__text {
   width: 90%;
@@ -226,4 +228,34 @@
     .button-t;
   }
 }
-@media (min-width: @size-desktop) {}
+@media (min-width: @size-desktop) {
+
+  .modal__link-text:hover .modal__link,
+  .modal__link-text:focus .modal__link {
+    font-size: 0;
+    width: 267px;
+    min-height: 48px;
+    border-left: double 0 transparent;
+    border-right: double 0 transparent;
+    border-top: double 4px transparent;
+    border-bottom: double 4px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2F80ED, #56CCF2);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .modal__link-text {
+    position: relative;
+  }
+
+  .modal__link-text:hover::before,
+  .modal__link-text:focus::before {
+    content: "Оставить заявку";
+    .button__name-hover;
+    font-size: 19px;
+    z-index: 2;
+    left: 61px;
+    top: 12px;
+  }
+
+}

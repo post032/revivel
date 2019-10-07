@@ -16,8 +16,8 @@ section.modal
           input(id="mail" type="email" name="E-mail" placeholder="E-mail" required).input__text
           label(for="mail").visually-hidden E-mail
         li.modal__element
-          input(id="ok" type="checkbox" name="consent" placeholder="E-mail" required).input__checkbox
+          input(id="ok" type="checkbox" name="consent" placeholder="E-mail" checked required).input__checkbox
           label(for="ok").modal__consent Согласие с 
             a(href="#") политикой конфиденциальности
-      input(type="submit" value="Оставить заявку").modal__link
-    
+      span.modal__link-text
+        input(type="submit" value="Оставить заявку").modal__link

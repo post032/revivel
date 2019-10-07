@@ -1,13 +1,15 @@
 .menu {
-  position: fixed;
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   background: #ffffff;
-  border-bottom: 1px solid #E5E5E5;
+  // border-bottom: 1px solid #E5E5E5;
 }
 .menu__line {
   border-bottom: 1px solid #E5E5E5;
-  position: relative;
+  position: fixed;
+  background: #ffffff;
+  width: 100%;
       z-index: 5;
 }
 
@@ -211,12 +213,8 @@
 
 @media (min-width: @size-tablet) {
   .menu {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    background: none;
-    padding-bottom: 30px;
-    padding-top: 33px;
   }
 
   .menu__logo {
@@ -258,6 +256,11 @@
 }
 
 @media (min-width: @size-desktop) {
+  .menu {
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 33px;
+  }
   .menu__logo-link span {
     display: inline-block;
     margin-left: 20px;

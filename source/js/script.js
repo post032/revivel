@@ -116,6 +116,11 @@ $('.doctors__link').click(function(e) {
   $('.modal').addClass('modal__show');
 });
 
+$('.menu__call').click(function(e) {
+  e.preventDefault();
+  $('.modal').addClass('modal__show');
+});
+
 $('.trust__link').click(function(e) {
   e.preventDefault();
   $('.modal').addClass('modal__show');

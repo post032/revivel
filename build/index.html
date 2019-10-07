@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <main class="header__block">
-      <div class="header">
-        <div class="header__bg">
-          <nav class="menu__line">
-            <div class="menu container">
-              <div class="menu__logo"><a class="menu__logo-link" href="index.html"> <span id="start">Медицинский центр<br> «Возрождение»</span></a>
-                <button class="menu-open menu-open--htx"><span>Открыть меню</span></button>
-              </div>
-              <div class="menu__hidden menu-hide">
-                <ul class="menu__lists">
-                  <li class="menu__list"> <a class="menu__link" href="#">Пациентам</a></li>
-                  <li class="menu__list"><a class="menu__link" href="#">Наши врачи</a></li>
-                  <li class="menu__list"><a class="menu__link" href="#">Почему мы</a></li>
-                  <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
-                </ul>
-                <div class="menu__phone"><a class="menu__number" href="tel: +7(812)2242563"> +7 (812) 224 25 63</a><a class="menu__call" href="#">Заказать обратный звонок</a></div>
-              </div>
-            </div>
-          </nav>
-          <div class="help__bg">
+    <header class="header__block">
+      <nav class="menu__line">
+        <div class="menu container">
+          <div class="menu__logo"><a class="menu__logo-link" href="index.html"> <span>Медицинский центр<br> «Возрождение»</span></a>
+            <button class="menu-open menu-open--htx"><span>Открыть меню</span></button>
+          </div>
+          <div class="menu__hidden menu-hide">
+            <ul class="menu__lists">
+              <li class="menu__list"> <a class="menu__link" href="#">Пациентам</a></li>
+              <li class="menu__list"><a class="menu__link" href="#">Наши врачи</a></li>
+              <li class="menu__list"><a class="menu__link" href="#">Почему мы</a></li>
+              <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
+            </ul>
+            <div class="menu__phone"><a class="menu__number" href="tel: +7(812)2242563"> +7 (812) 224 25 63</a><a class="menu__call" href="#">Заказать обратный звонок</a></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main__block">
+      <div class="main">
+        <div class="main__bg">
+          <div class="help__bg" id="start">
             <div class="container">
               <section class="help">
                 <h1 class="help__title" id="patient">Медицинский центр «Возрождение»</h1>
@@ -262,11 +264,11 @@
               <label class="visually-hidden" for="mail">E-mail</label>
             </li>
             <li class="modal__element">
-              <input class="input__checkbox" id="ok" type="checkbox" name="consent" placeholder="E-mail" required>
+              <input class="input__checkbox" id="ok" type="checkbox" name="consent" placeholder="E-mail" checked required>
               <label class="modal__consent" for="ok">Согласие с <a href="#">политикой конфиденциальности</a></label>
             </li>
-          </ul>
-          <input class="modal__link" type="submit" value="Оставить заявку">
+          </ul><span class="modal__link-text">
+            <input class="modal__link" type="submit" value="Оставить заявку"></span>
         </div>
       </form>
     </section>
